@@ -113,6 +113,7 @@ function concatenateStrings() {
       fler och fler parametrar behöver läggas till? T.ex. avatar eller adress. Hitta en bättre
       lösning som är hållbar och skalar bättre. 
   */
+
 class User {
   name: string;
   birthday: Date;
@@ -138,16 +139,8 @@ class User {
       return "Du är under 20 år";
     }
 
+    // Logik för att skapa en användare
     console.log(`Användare skapad: ${this.name}, Ålder: ${userAge}`);
     return "Användare skapad!";
   }
 }
-
-const newUser = new User(
-  "John Doe",
-  new Date(2005, 5, 10),
-  "john.doe@example.com",
-  "password123"
-);
-
-console.log(newUser.createUser());
